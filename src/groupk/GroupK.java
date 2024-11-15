@@ -27,6 +27,8 @@ public class GroupK {
         rokosMenu.setMainMenu(ourGUI);
         rokosMenu.setCalcEditorMenu(rokosEditor);
         rokosEditor.setCalculatorMenu(rokosMenu);
+        //Alex Quiz Code
+        
         // render the GUI
         ourGUI.setVisible(true);
     }
