@@ -4,6 +4,7 @@
  */
 package groupk;
 
+import Roko.CalculatorEditor;
 import Roko.CalculatorMenu;
 
 /**
@@ -17,10 +18,16 @@ public class GroupK {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        // common menu
         MainMenu ourGUI = new MainMenu();
+        // Roko's menu initialisation statements
         CalculatorMenu rokosMenu = new CalculatorMenu();
+        CalculatorEditor rokosEditor = new CalculatorEditor();
         ourGUI.setCalculatorMenu(rokosMenu);
         rokosMenu.setMainMenu(ourGUI);
+        rokosMenu.setCalcEditorMenu(rokosEditor);
+        rokosEditor.setCalculatorMenu(rokosMenu);
+        // render the GUI
         ourGUI.setVisible(true);
     }
     
