@@ -16,12 +16,17 @@ public class CalculatorMenu extends javax.swing.JFrame {
      * Creates new form CalculatorMenu
      */
     private MainMenu mainMenu; 
+    private CalculatorEditor calcEditorMenu;
     public CalculatorMenu() {
         initComponents();
     }
     
     public void setMainMenu(MainMenu menu){
         mainMenu = menu;
+    }
+    
+    public void setCalcEditorMenu(CalculatorEditor menu){
+        calcEditorMenu = menu;
     }
 
     /**
@@ -59,8 +64,18 @@ public class CalculatorMenu extends javax.swing.JFrame {
         menuLBL.setText("Budget Calculator");
 
         addBTN.setText("Add Record");
+        addBTN.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addBTNActionPerformed(evt);
+            }
+        });
 
         editBTN.setText("Edit Record");
+        editBTN.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                editBTNActionPerformed(evt);
+            }
+        });
 
         calculateBTN.setText("Calculate");
 
@@ -146,6 +161,18 @@ public class CalculatorMenu extends javax.swing.JFrame {
         this.setVisible(false);
         mainMenu.setVisible(true);
     }//GEN-LAST:event_backBTNActionPerformed
+
+    private void addBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addBTNActionPerformed
+        // TODO add your handling code here:
+        this.setVisible(false);
+        calcEditorMenu.setVisible(true);
+    }//GEN-LAST:event_addBTNActionPerformed
+
+    private void editBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editBTNActionPerformed
+        // TODO add your handling code here:
+        this.setVisible(false);
+        calcEditorMenu.setVisible(true);
+    }//GEN-LAST:event_editBTNActionPerformed
 
     /**
      * @param args the command line arguments
