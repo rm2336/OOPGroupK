@@ -61,8 +61,6 @@
                           <Component id="jScrollPane1" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-              </Group>
-              <EmptySpace pref="39" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -107,7 +105,6 @@
                               <Component id="searchBTN" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace pref="12" max="32767" attributes="0"/>
                   </Group>
               </Group>
           </Group>
@@ -212,5 +209,4 @@
         <Property name="text" type="java.lang.String" value="Search"/>
       </Properties>
     </Component>
-  </SubComponents>
 </Form>

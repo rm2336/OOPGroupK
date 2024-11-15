@@ -51,8 +51,6 @@ public class CalculatorMenu extends javax.swing.JFrame {
         subsidyRB = new javax.swing.JRadioButton();
         campaignRB = new javax.swing.JRadioButton();
         programmeRB = new javax.swing.JRadioButton();
-        deleteBTN = new javax.swing.JButton();
-        searchBTN = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -107,20 +105,6 @@ public class CalculatorMenu extends javax.swing.JFrame {
         });
 
         searchBTN.setText("Search");
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(backBTN)
-                    .addComponent(editBTN, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(calculateBTN, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(addBTN, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(31, 31, 31)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(menuLBL, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                         .addGroup(layout.createSequentialGroup()
@@ -245,7 +229,6 @@ public class CalculatorMenu extends javax.swing.JFrame {
     private javax.swing.JButton calculateBTN;
     private javax.swing.JRadioButton campaignRB;
     private javax.swing.ButtonGroup costBGR;
-    private javax.swing.JButton deleteBTN;
     private javax.swing.JTextArea displayTA;
     private javax.swing.JButton editBTN;
     private javax.swing.JScrollPane jScrollPane1;
@@ -253,7 +236,6 @@ public class CalculatorMenu extends javax.swing.JFrame {
     private javax.swing.JButton nextBTN;
     private javax.swing.JButton previousBTN;
     private javax.swing.JRadioButton programmeRB;
-    private javax.swing.JButton searchBTN;
     private javax.swing.JRadioButton subsidyRB;
     // End of variables declaration//GEN-END:variables
 }
